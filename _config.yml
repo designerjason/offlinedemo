@@ -1,2 +1,4 @@
 theme: Demo Website - App
 title: This demo site will fallback to an offline page if no network is available
+github:
+  is_project_page: false
