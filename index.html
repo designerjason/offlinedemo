@@ -10,8 +10,6 @@
             you should be taken to the offline web app. Most browsers support it, but some do not (mainly older versions of Internet Explorer). Just ensure you're
             on the latest browser version.</p>
   
-          <p><strong>If a browser does not support this feature, you'll just see your default browser message telling you that you have no internet connection.</strong></p>
-  
           <p>The browsers that <em>do</em> support the offline web app are as follows:</p>
           <ul>
             <li>Microsoft Edge (v17+)</li>
@@ -22,6 +20,10 @@
             <li>Samsung Internet (v4+)</li>
           </ul>
         </div>
+
+<p><strong>If a browser does not support this feature, 
+            you'll just see your default browser message telling you that you have no internet connection.</strong></p>
+
         <script>
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker.register('sw.js');
