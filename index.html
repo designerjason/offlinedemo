@@ -6,7 +6,11 @@
         <div>
           <h3>default page - you are online</h3>
         </div>
-        <script src="sw.js"></script>
+        <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('sw.js');
+        }
+        </script>
   </body>
 </html>
 
