@@ -1,7 +1,7 @@
 addEventListener('install', (event) => {
   event.waitUntil(async function() {
     const cache = await caches.open('static-v1');
-    await cache.addAll(['offline.html', 'styles.css']);
+    await cache.addAll(['app.html', 'styles.css']);
   }());
 });
 
@@ -36,7 +36,7 @@ addEventListener('fetch', (event) => {
     } catch (err) {
       // If this was a navigation, show the offline page:
       if (request.mode === 'navigate') {
-        return caches.match('offline.html');
+        return caches.match('app.html');
       }
 
       // Otherwise throw
