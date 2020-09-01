@@ -7,3 +7,11 @@ font-family: arial;
   max-width: 800px;
   width:100%;
 }
+
+.success {
+color: lime;
+}
+
+.warning {
+color: #ff0000;
+}
