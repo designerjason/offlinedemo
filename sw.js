@@ -1,7 +1,7 @@
 addEventListener('install', (event) => {
   event.waitUntil(async function() {
     const cache = await caches.open('static-v1');
-    await cache.addAll(['app.html', 'styles.css']);
+    await cache.addAll(['app.html', 'styles.css', 'giphy.webp']);
   }());
 });
 
