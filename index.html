@@ -5,7 +5,20 @@
   </head>
   <body
         <div class="container">
-          <h3>default page - you are online</h3>
+          <h3>default page - you are <span class="success">online</span></h3>
+          <p>Your normal website will be displayed here if there is a network connection. If you go offline and reload the page, 
+            you should be taken to the offline web app. Most browsers support it, but some do not (mainly older versions of Internet Explorer). Just ensure you're
+            on the lastest browser version.</p>
+  
+          <p>The browsers that <em>do</em> support the offline web app are as follows:</p>
+          <ul>
+            <li>Microsoft Edge (v17+)</li>
+            <li>Firefox (v44+)</li>
+            <li>Google Chrome (v45+)</li>
+            <li>Safari (v11.1+)</li>
+            <li>iOS Safari (v11.3+)</li>
+            <li>Samsung Internet (v4+)</li>
+          </ul>
         </div>
         <script>
         if ('serviceWorker' in navigator) {
